@@ -72,9 +72,9 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     if resolution[0] == "1920x1080":
         kk = re.sub(r'(HDRip)', '1080p', kk)
     
-    out_put_file_name = kk.replace(f".{aa}", "@Anime4u_in.mkv")
+    #out_put_file_name = kk.replace(f".{aa}", "@Anime4u_in.mkv")
     
-    #out_put_file_name = video_file + "_compressed" + ".mkv"
+    out_put_file_name = video_file + "@zoro_is_robot" + ".mkv"
     progress = output_directory + "/" + "progress.txt"
     with open(progress, 'w') as f:
       pass
@@ -82,14 +82,14 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     ##"-metadata", "title=@SenpaiAF", "-vf", "drawtext=fontfile=njnaruto.ttf:fontsize=20:fontcolor=black:x=15:y=15:text=" "Dark Encodes",
      ## -vf eq=gamma=1.4:saturation=1.4
      ## lol 😂
-    crf.append("25")
-    codec.append("libx264")
-    resolution.append("1920x1080")
-    preset.append("veryfast")
+    crf.append("30")
+    codec.append("libx265")
+    resolution.append("1280x720")
+    preset.append("ultrafast")
     audio_b.append("40k")
-    name.append("ANIME x UNIVERSE")
-    size.append("15")
-    file_genertor_command = f"ffmpeg -hide_banner -loglevel quiet -progress '{progress}' -i '{video_file}' -metadata 'title=Encoded by @Anime4u_in' -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]} -metadata:s:v 'title=Anime4u.in' -metadata:s:a 'title=Anime4u.in' -metadata:s:s 'title=Anime4u.in' -vf 'drawtext=fontfile=font.ttf:fontsize={size[0]}:fontcolor=white:x=w-tw-10:y=10:text={name[0]}' '{out_put_file_name}' -y"
+    name.append("Free Edu Care")
+    size.append("18")
+    file_genertor_command = f"ffmpeg -hide_banner -loglevel quiet -progress '{progress}' -i '{video_file}' -metadata 'title=Encoded by @Anime4u_in' -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]} -metadata:s:v 'title=zoro_is_robot' -metadata:s:a 'title=zoro_is_robot' -metadata:s:s 'title=zoro_is_robot' -vf 'drawtext=fontfile=font.ttf:fontsize={size[0]}:fontcolor=white:x=w-tw-10:y=10:text={name[0]}' '{out_put_file_name}' -y"
 #Done !!
     COMPRESSION_START_TIME = time.time()
     process = await asyncio.create_subprocess_shell(
