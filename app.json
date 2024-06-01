@@ -1,0 +1,57 @@
+{
+  "name": "VideoCompressBot",
+  "description": "Telegram's best Video Compress Bot",
+  "logo": "https://graph.org/file/47d25d9ba84e13d958d2d.jpg",
+  "keywords": [
+    "telegram",
+    "best",
+    "video",
+    "compress",
+    "bot"
+  ],
+  "success_url": "https://t.me/linux_repo",
+  "website": "https://t.me/Discovery_Updates",
+  "repository": "https://github.com/AbirHasan2005/VideoCompress",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
+      "value": "ANYTHING"
+    },
+    "SESSION_NAME": {
+      "description": "Keep this default",
+      "value": "AHCompressBot",
+      "required": true
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string. Get this from @BotFather",
+      "value": "6696429339:AAHHIUb0tFIrfsEPdWIwuatq6GR6z6V8U1Q",
+      "required": true
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "22768681",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "07debb70a590c8b06f47a31a6761a28b",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Your Bot Username. Without `@` before Username!",
+      "value": "Upaxu_bot",
+      "required": true
+    },
+    "LOG_CHANNEL": {
+      "description": "Your Bot's Log Channel's Username. For Help ask in @linux_repo",
+      "value": "encoderlog1",
+      "required": true
+    },
+    "AUTH_USERS": {
+      "description": "Allow only pre-defined users to use this bot as Sudo User. Separate with Space. Just for using Admin Commands.",
+      "value": "5066042764 6345618689 5090146108 -1002066372404",
+      "required": true
+    }
+  },
+  "stack": "container"
+}
