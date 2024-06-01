@@ -45,13 +45,13 @@ from bot.plugins.status_message_fn import (
 from bot.commands import Command
 from bot.plugins.call_back_button_handler import button
 sudo_users = "1908235162" 
-crf.append("23")
+crf.append("30")
 codec.append("libx265")
-resolution.append("854x480")
-preset.append("veryfast")
+resolution.append("1280x720")
+preset.append("ultrafast")
 audio_b.append("40k")
-name.append("ANIME x UNIVERSE")
-size.append("15")
+name.append("Free Edu Care")
+size.append("17")
 # 🤣
 
 
@@ -178,10 +178,10 @@ if __name__ == "__main__" :
             await message.reply_text("<b>Admin Only</b> 💀")
             
         
-    @app.on_message(filters.incoming & filters.command(["c480p", f"compress@{BOT_USERNAME}"]))
+    @app.on_message(filters.incoming & filters.command(["compress", f"compress@{BOT_USERNAME}"]))
     async def help_message(app, message):
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @dinesh12777")
+            return await message.reply_text("You are not authorised to use this bot contact @zoro_is_robot")
         query = await message.reply_text("ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ...\nᴘʟᴇᴀsᴇ ʙᴇ ᴘᴀᴛɪᴇɴᴛ ʏᴏᴜ ᴇɴᴄᴏᴅᴇ ᴡɪʟʟ sᴛᴀʀᴛ sᴏᴏɴ", quote=True)
         data.append(message.reply_to_message)
         if len(data) == 1:
@@ -222,7 +222,7 @@ if __name__ == "__main__" :
    
     @app.on_message(filters.incoming & filters.command(["help", f"help@{BOT_USERNAME}"]))
     async def help_message(app, message):
-        await message.reply_text("Hi, I am <b>Video Encoder bot</b>\n\n➥ Send me your telegram files\n➥ I will encode them one by one as I have <b>queue feature</b>\n➥ Just send me the jpg/pic and it will be set as your custom thumbnail \n➥ For ffmpeg lovers - u can change crf by /eval crf.insert(0, 'crf value')\n➥ Contact ☆ @dinesh12777 \n\n🏷<b>Maintained By : @Anime4u_in</b>", quote=True)
+        await message.reply_text("Hi, I am <b>Video Encoder bot</b>\n\n➥ Send me your telegram files\n➥ I will encode them one by one as I have <b>queue feature</b>\n➥ Just send me the jpg/pic and it will be set as your custom thumbnail \n➥ For ffmpeg lovers - u can change crf by /eval crf.insert(0, 'crf value')\n➥ Contact ☆ @zoro_is_robot \n\n🏷<b>Maintained By : @zoro_is_robot</b>", quote=True)
   
     @app.on_message(filters.incoming & filters.command(["log", f"log@{BOT_USERNAME}"]))
     async def help_message(app, message):
