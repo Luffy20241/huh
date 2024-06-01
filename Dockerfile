@@ -1,5 +1,5 @@
 # Import Ubuntu
-FROM ubuntu:20.04
+FROM ubuntu:noble-20240429
 
 # Make /app dir
 RUN mkdir /app
