@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+FROM ubuntu:jammy-20240427
+
 WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
