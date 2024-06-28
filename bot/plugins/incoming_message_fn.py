@@ -17,7 +17,7 @@ from bot import (
   data,
   app  
 )
-from bot.helper_funcs.ffmpeg import (
+from bot.helper_funcs.vegapunk import (
   convert_video,
   media_info,
   take_screen_shot
