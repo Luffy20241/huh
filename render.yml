@@ -5,21 +5,21 @@ services:
     plan: free
     envVars:
       - key: TG_BOT_TOKEN
-         value: 6487314038:AAHyEnNRnf_imx_TmwaejYtu4rUIydayuEI
+         #value: 6487314038:AAHyEnNRnf_imx_TmwaejYtu4rUIydayuEI
         sync: false
       - key: LOG_CHANNEL
-         value: dumpindump
+         #value: dumpindump
         sync: false
       - key: BOT_USERNAME
-         value: Zoro_three_robot
+         #value: Zoro_three_robot
         sync: false
       - key: APP_ID
-         value: 20524455
+        # value: 20524455
         sync: false
       - key: API_HASH
-         value: 03f1c29714a7ce9ed1819318427ea281
+         #value: 03f1c29714a7ce9ed1819318427ea281
         sync: false
       - key: AUTH_USERS
-         value: 1908235162
+        # value: 1908235162
         sync: false
       
