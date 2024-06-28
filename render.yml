@@ -1,6 +1,6 @@
 services:
   - type: worker
-    name: aeonfsbot
+    name: none
     region: Frankfurt
     plan: free
     envVars:
